@@ -25,5 +25,10 @@ public class FirstClass {
         oldNotebook.checkYear();
         oldNotebook.checkPriceYear();
 
+        Grades grades = new Grades();
+        grades.add(4);
+        grades.add(5);
+        grades.checkLastAddedGrade();
+        grades.calculateAverageGrade();
     }
 }
