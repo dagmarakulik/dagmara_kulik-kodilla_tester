@@ -1,4 +1,4 @@
-package com.kodilla.task_2_6;
+package task_2_6;
 public class UserValidator {
     private String name;
     private double age;
