@@ -1,6 +1,4 @@
-package com.kodilla.random;
-
-import java.util.Random;
+package random;
 
 public class RandomNumbers {
 
