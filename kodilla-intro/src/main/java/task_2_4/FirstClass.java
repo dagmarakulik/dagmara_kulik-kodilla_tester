@@ -1,4 +1,4 @@
-package com.kodilla.task_2_4;
+package task_2_4;
 
 public class FirstClass {
     public static void main(String[] args) {

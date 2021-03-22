@@ -1,4 +1,4 @@
-package com.kodilla.task_2_4;
+package task_2_4;
 
 public class Grades {
     private int[] grades;
