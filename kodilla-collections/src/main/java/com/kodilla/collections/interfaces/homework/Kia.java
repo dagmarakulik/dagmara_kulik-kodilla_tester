@@ -8,6 +8,10 @@ public class Kia implements Car {
         this.kiaSpeed = kiaSpeed;
     }
 
+    public Kia() {
+
+    }
+
     @Override
     public int getSpeed() {
         return kiaSpeed;
@@ -28,5 +32,20 @@ public class Kia implements Car {
 
         kiaSpeed -= decreaseSpeed;
         System.out.println("Kia speed decreases to " + kiaSpeed + " km/h");
+    }
+
+    @Override
+    public int getYear() {
+        return 2020;
+    }
+
+    @Override
+    public String getColor() {
+        return "White";
+    }
+
+    @Override
+    public void increaseSpeedRandomly(int speed) {
+        kiaSpeed += speed;
     }
 }

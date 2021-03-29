@@ -8,6 +8,10 @@ public class Opel implements Car {
         this.opelSpeed = opelSpeed;
     }
 
+    public Opel() {
+
+    }
+
     @Override
     public int getSpeed() {
         return opelSpeed;
@@ -28,5 +32,20 @@ public class Opel implements Car {
 
         opelSpeed -= decreaseSpeed;
         System.out.println("Opel speed decreases to " + opelSpeed + " km/h");
+    }
+
+    @Override
+    public int getYear() {
+        return 2010;
+    }
+
+    @Override
+    public String getColor() {
+        return "Red";
+    }
+
+    @Override
+    public void increaseSpeedRandomly(int speed) {
+        opelSpeed += speed;
     }
 }

@@ -8,6 +8,10 @@ public class Ford implements Car {
         this.fordSpeed = fordSpeed;
     }
 
+    public Ford() {
+
+    }
+
     @Override
     public int getSpeed() {
         return fordSpeed;
@@ -15,9 +19,9 @@ public class Ford implements Car {
 
     @Override
     public void increaseSpeed() {
-        int increasedSpeed = 10;
+        int increaseSpeed = 10;
 
-        fordSpeed += increasedSpeed;
+        fordSpeed += increaseSpeed;
 
         System.out.println("Ford speed increases to " + fordSpeed + " km/h");
     }
@@ -29,4 +33,21 @@ public class Ford implements Car {
         fordSpeed -= decreaseSpeed;
         System.out.println("Ford speed decreases to " + fordSpeed + " km/h");
     }
+
+    @Override
+    public int getYear() {
+        return 1999;
+    }
+
+    @Override
+    public String getColor() {
+        return "Black";
+    }
+
+    @Override
+    public void increaseSpeedRandomly(int speed) {
+        fordSpeed += speed;
+    }
+
+
 }

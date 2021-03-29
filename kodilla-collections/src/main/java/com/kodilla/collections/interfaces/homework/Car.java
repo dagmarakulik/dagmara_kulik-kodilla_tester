@@ -7,4 +7,12 @@ public interface Car {
     void increaseSpeed();
 
     void decreaseSpeed();
+
+    int getYear();
+
+    String getColor();
+
+    void increaseSpeedRandomly(int speed);
+
+
 }
