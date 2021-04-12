@@ -38,13 +38,4 @@ public class Task {
     public LocalDate getDeadLine() {
         return deadLine;
     }
-
-    @Override
-    public String toString() {
-        return "Task{" +
-                "name='" + name + '\'' +
-                ", opened=" + opened +
-                ", deadLine=" + deadLine +
-                '}';
-    }
 }
