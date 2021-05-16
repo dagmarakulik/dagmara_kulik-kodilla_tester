@@ -26,7 +26,7 @@ class BookControllerTest {
         List<BookDto> result = bookController.getBooks();
 
         //then
-        assertThat(result).hasSize(0);
+        assertThat(result).hasSize(2);
     }
 
     @Test
