@@ -7,6 +7,22 @@
    </soapenv:Body>
 </soapenv:Envelope>
 
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ns2:getCourseResponse xmlns:ns2="http://kodilla.com/courses/soap"/>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://kodilla.com/courses/soap">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soap:getCourseRequest>
+         <soap:name>Tester</soap:name>
+      </soap:getCourseRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
@@ -24,7 +40,6 @@
         </soap:getCourseRequest>
     </soapenv:Body>
 </soapenv:Envelope>
-
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
     <SOAP-ENV:Header/>
