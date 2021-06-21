@@ -41,7 +41,7 @@ public class WalletSteps implements En {
             cashier.withdraw(wallet, 200);
         });
 
-        Then("In cashslot is everything", () -> {
+        Then("$200 should be dispensed", () -> {
             Assert.assertEquals(200, cashSlot.getContents());
         });
 
