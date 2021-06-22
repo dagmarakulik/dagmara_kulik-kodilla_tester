@@ -19,12 +19,12 @@ public class WeatherMonitoringSystemTestSuite {
     Location location1 = Mockito.mock(Location.class);
 
     @Test
-    public void notSubscribedClientShouldNotReceiveNotificationWeather() {
+    public void notSubscribedUserShouldNotReceiveNotificationWeather() {
         weatherMonitoringSystem.sendNotification(notification);
         Mockito.verify(user, Mockito.never()).receive(notification);
     }
     @Test
-    public void subscribedClientShouldReceiveNotification() {
+    public void subscribedUserShouldReceiveNotification() {
         weatherMonitoringSystem.addUserToLocation(user,location);
         weatherMonitoringSystem.sendNotification(notification);
         Mockito.verify(user, Mockito.times(1)).receive(notification);
