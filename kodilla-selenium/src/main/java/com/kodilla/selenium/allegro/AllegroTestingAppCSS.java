@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 
 public class AllegroTestingAppCSS {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args)  {
         System.setProperty("webdriver.chrome.driver", "/Users/Dagmara/Documents/Development/Kodilla/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.allegro.pl/");
